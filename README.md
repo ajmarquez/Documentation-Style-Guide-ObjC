@@ -66,7 +66,7 @@
  //----------
  // EXAMPLE 2.2.2
  //----------
-
+```
  /*!
     @class ViewController
 
@@ -80,5 +80,32 @@
     @helps It helps no other classes.
     @helper    No helper exists for this class.
  */
-
+```
  This one uses another bunch of tags. Most of them optional, but in this particular case @classdesign MUST be filled if applies.
+
+ When OUTSIDE a method we will use the following format in order to explain or datail it, for example (From AFNEtworking):
+
+ ```
+ /**
+ *  A workaround for issues related to key-value observing the `state` of an `NSURLSessionTask`.
+ *
+ *  See:
+ *  - https://github.com/AFNetworking/AFNetworking/issues/1477
+ *  - https://github.com/AFNetworking/AFNetworking/issues/2638
+ *  - https://github.com/AFNetworking/AFNetworking/pull/2702
+ */
+
+static inline void af_swizzleSelector(Class class, SEL originalSelector, SEL swizzledSelector) {
+    Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+    method_exchangeImplementations(originalMethod, swizzledMethod);
+}
+```
+
+ When INSIDE the method, the use of ```///``` must be used to signal To-do's or little reminders for the programmer.
+ when a wide explanation INSIDE a method must be done we will start with ```/**``` and end with ```*/```.
+
+ We will use the following bullets to specify punctual situations:
+
+ ```(!)``` Will be used to call attention to possible bugs or fixes needed to make
+ ```(?)``` When the piece of code presents a problem not identified at the moment 
