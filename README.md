@@ -11,7 +11,7 @@
   and also by XCode. For example:
 
 
-   *EXAMPLE 1.0.1*
+   **EXAMPLE 1.0.1**
 
 ```
     /*!
@@ -60,7 +60,7 @@
 
  Now let's go to a second example. This one is another class definition.
 
- *EXAMPLE 2.2.2*
+ **EXAMPLE 2.2.2**
 ```
  /*!
     @class ViewController
@@ -80,6 +80,7 @@
 
  When OUTSIDE a method we will use the following format in order to explain or datail it, for example (From AFNEtworking):
 
+**EXAMPLE 2.2.3**
  ```
  /**
  *  A workaround for issues related to key-value observing the `state` of an `NSURLSessionTask`.
