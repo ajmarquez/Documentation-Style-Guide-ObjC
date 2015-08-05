@@ -23,12 +23,11 @@
 ####1.1.- WHEN TO USE THE COMMENTS
 
   Comments will be added on the following times:
-    - At the a Class header before the interface call (See 2.1)
-    - At certain public properties that are needed to explain to the user (See 2.2)
-    - Always methods will be documented, explaining briefly its function, arguments, return and any other help needed (See 2.3)
-    - Inside the .m body we will use a particular notation in order to express important information that must be knowned or also
-      any bonus or easter egg inside the code (Yeah, this doesn't have to be boring). Also runtime helping code or call to console
-      must be identified (See 2.4)
+  * At the a Class header before the interface call (See 2.1)
+  * At certain public properties that are needed to explain to the user (See 2.2)
+  * Always methods will be documented, explaining briefly its function, arguments, return and any other help needed (See 2.3)
+  * Inside the .m body we will use a particular notation in order to express important information that must be knowned or also
+      any bonus or easter egg inside the code (Yeah, this doesn't have to be boring). Also runtime helping code or call to console must be identified (See 2.4)
 
 ###2.- HOW TO DOCUMENT YOUR CODE AND DON'T DIE TRYING
 
@@ -40,9 +39,7 @@
   There are several tags to be used on a Class, there are not restrictions of how many may be used, but we will choose as MANDATORY (Watch out,
   I just used Caps!) the following: @header, @class, @brief, @discussion, @author. Here's an example:
 
-  //----------
-  // EXAMPLE 2.1.1
-  //----------
+  *EXAMPLE 2.1.1*
 ```
   /*!
     @header ViewController.h
@@ -63,9 +60,7 @@
 
  Now let's go to a second example. This one is another class definition.
 
- //----------
- // EXAMPLE 2.2.2
- //----------
+ *EXAMPLE 2.2.2*
 ```
  /*!
     @class ViewController
@@ -107,5 +102,5 @@ static inline void af_swizzleSelector(Class class, SEL originalSelector, SEL swi
 
  We will use the following bullets to specify punctual situations:
 
- ```(!)``` Will be used to call attention to possible bugs or fixes needed to make
- ```(?)``` When the piece of code presents a problem not identified at the moment 
+ * ```(!)``` Will be used to call attention to possible bugs or fixes needed to make
+ * ```(?)``` When the piece of code presents a problem not identified at the moment
