@@ -104,3 +104,4 @@ static inline void af_swizzleSelector(Class class, SEL originalSelector, SEL swi
 
  * ```(!)``` Will be used to call attention to possible bugs or fixes needed to make
  * ```(?)``` When the piece of code presents a problem not identified at the moment
+ * ```:::``` This is a DevMark. When the code is ready for production, comments market this way must be deleted
