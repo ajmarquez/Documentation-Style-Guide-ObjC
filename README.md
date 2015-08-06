@@ -10,6 +10,9 @@
   First we will create this comments using the approach `/*! - */` since this one is recognize by Documentation parsing software
   and also by XCode. For example:
 
+
+   **EXAMPLE 1.0.1**
+
 ```
     /*!
         Hi, I'm a nice piece of code
@@ -36,6 +39,7 @@
   There are several tags to be used on a Class, there are not restrictions of how many may be used, but we will choose as MANDATORY (Watch out,
   I just used Caps!) the following: @header, @class, @brief, @discussion, @author. Here's an example:
 
+  *EXAMPLE 2.1.1*
 ```
   /*!
     @header ViewController.h
@@ -56,6 +60,7 @@
 
  Now let's go to a second example. This one is another class definition.
 
+ **EXAMPLE 2.2.2**
 ```
  /*!
     @class ViewController
@@ -75,6 +80,7 @@
 
  When OUTSIDE a method we will use the following format in order to explain or datail it, for example (From AFNEtworking):
 
+**EXAMPLE 2.2.3**
  ```
  /**
  *  A workaround for issues related to key-value observing the `state` of an `NSURLSessionTask`.
